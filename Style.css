@@ -8,7 +8,9 @@
 body {
     font-family: var(--font);
     margin: 0;
-    background-color: #f9f9f9;
+    background-image: url(italy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 * {
@@ -17,6 +19,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Nav bar -------------------------------------------------------*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -82,3 +85,56 @@ nav a:hover {
 img {
     height: 40px;
 }
+/* ------------------------------------------------------------- */
+
+/* Home -------------------------------------------------------- */
+#homeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    margin: 200px auto 0 auto;
+
+    padding: 50px; 
+}
+
+#descriptionHome {
+    max-width: 80%; 
+    margin: 0; 
+    padding: 20px;
+    padding-left: 500px;
+    color: #fff; 
+    border-radius: 10px;
+}
+
+#titleHome {
+    font-size: 60px; 
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#textHome {
+    font-size: 18px;
+    line-height: 1.5; 
+    font-weight: normal;
+    max-width: 100%;
+    text-align: left;
+}
+
+#iconsHome {
+    display: flex;
+    justify-content: left; 
+    gap: 50px; 
+}
+
+#iconsHome img {
+    width: 70px; 
+    height: 70px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+#iconsHome img:hover {
+    transform: scale(1.2);
+}
+/* ------------------------------------------------------------- */
