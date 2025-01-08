@@ -1,6 +1,7 @@
 :root {
     --primary-color: #002a56;
     --secondary-color: #ffffff;
+    --third-color: #4d59ff;
     --accent-color: #ffcc00;
     --font: "Noto Sans", sans-serif;
 }
@@ -8,8 +9,8 @@
 body {
     font-family: var(--font);
     margin: 0;
-    background-image: url(../Images/italy.jpg);
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/italy.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -64,5 +65,45 @@ img {
 
 /* ------------------------------------------------------------- */
 /* Content------------------------------------------------------ */
+#contentAbout {
+    margin: 50px auto;
+    padding: 15px;
+    max-width: 70%;
+    color: var(--secondary-color);
+}
 
+#titleAbout {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: var(--accent-color);
+}
+
+#textAbout {
+    font-size: 16px;
+    text-align: justify;
+}
+
+#contentTeam {
+    margin: 0 auto;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-color);
+    gap: 15px;
+}
+
+#titleTeam {
+    font-size: 40px;
+}
+
+#member {
+    margin: 15px auto;
+}
+
+#member h3 {
+    font-size: 23px;
+    color: var(--third-color);
+}
 /* ------------------------------------------------------------- */

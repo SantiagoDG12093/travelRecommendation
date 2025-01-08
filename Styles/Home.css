@@ -8,8 +8,8 @@
 body {
     font-family: var(--font);
     margin: 0;
-    background-image: url(../Images/italy.jpg);
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/italy.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -117,7 +117,7 @@ img {
     line-height: 1.5; 
     font-weight: normal;
     max-width: 100%;
-    text-align: left;
+    text-align: justify;
 }
 
 #iconsHome {
