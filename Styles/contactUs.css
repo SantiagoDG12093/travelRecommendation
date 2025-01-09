@@ -63,47 +63,53 @@ img {
     height: 40px;
 }
 
-/* ------------------------------------------------------------- */
-/* Content------------------------------------------------------ */
-#contentAbout {
-    margin: 50px auto;
-    padding: 15px;
+/* --------------------------------------------------------------*/
+/* Content-------------------------------------------------------*/
+#contentContact {
+    width: 100%;
+    margin: 100px auto 0 auto;
+    padding: 25px;
     max-width: 70%;
     color: var(--secondary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-#titleAbout {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 12px;
+#contentContact h1 {
+    font-size: 35px;
     color: var(--accent-color);
 }
 
-#textAbout {
+#contentContact label, button {
+    display: block;
+}
+
+#contentContact input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 16px;
-    text-align: justify;
 }
 
-#contentTeam {
-    margin: 0 auto;
-    max-width: 70%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: var(--secondary-color);
-    gap: 15px;
+#contentContact button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--third-color);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#titleTeam {
-    font-size: 40px;
+#contentContact button:hover {
+    background-color: var(--primary-color);
 }
-
-#member {
-    margin: 15px auto;
-}
-
-#member h3 {
-    font-size: 23px;
-    color: var(--third-color);
-}
-/* ------------------------------------------------------------- */
+/* --------------------------------------------------------------*/
