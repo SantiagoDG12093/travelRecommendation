@@ -137,3 +137,30 @@ img {
     transform: scale(1.2);
 }
 /* ------------------------------------------------------------- */
+/* Recommendations -------------------------------------------------------- */
+#infoRecommendation {
+    max-width: 90%;
+    text-align: justify;
+    margin: 20px auto;
+}
+
+#recommendation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#imgRecommendation {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#textRecommendation {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+/* ------------------------------------------------------------- */
